@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include "sales_item.h"
+
 void exercise_1_4()
 {
     std::cout << "Enter two numbers: " << std::endl;
@@ -128,6 +130,60 @@ void exercise_1_16()
     }
 
     std::cout << std::endl << "sum: " << sum << std::endl;
+}
+
+void exercise_1_17()
+{
+    int current_value = 0, value = 0;
+
+    if (std::cin >> current_value)
+    {
+        int count = 1;
+        while (std::cin >> value)
+        {
+            if (value == current_value)
+            {
+                ++count;
+            }
+            else
+            {
+                std::cout << current_value << " occurs " << count << " times" << std::endl;
+                current_value = value;
+                count = 1;
+            }
+        }
+        std::cout << current_value << " occurs " << count << " times" << std::endl;
+    }
+}
+
+void exercise_1_20()
+{
+    SalesItem book;
+
+    while (std::cin >> book)
+    {
+        std::cout << book << std::endl;
+    }
+}
+
+void exercise_1_21()
+{
+    SalesItem item1, item2;
+    std::cin >> item1 >> item2;
+
+    std::cout << "sum: " << item1 + item2 << std::endl;
+}
+
+void exercise_1_22()
+{
+    SalesItem item, readValue;
+    double sum = 0.0;
+    while (std::cin >> readValue)
+    {
+        item += readValue;
+    }
+
+    std::cout << "sum of all transactions: " << item << std::endl;
 }
 
 #endif // !CHAPTER_01_H
