@@ -78,6 +78,10 @@ public:
         return isbn;
     }
     double avg_price() const;
+    unsigned get_units_sold() const
+    {
+        return units_sold;
+    }
     // private members as before
 private:
     std::string isbn; // implicitly initialized to the empty string

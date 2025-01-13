@@ -2,6 +2,6 @@
 
 int main()
 {
-    exercise_1_22();
+    exercise_1_23();
     return 0;
 }

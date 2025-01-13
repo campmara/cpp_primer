@@ -186,4 +186,28 @@ void exercise_1_22()
     std::cout << "sum of all transactions: " << item << std::endl;
 }
 
+void exercise_1_23()
+{
+    SalesItem current_item, item;
+
+    if (std::cin >> current_item)
+    {
+        while (std::cin >> item)
+        {
+            if (item.get_isbn() == current_item.get_isbn())
+            {
+                current_item += item;
+            }
+            else
+            {
+                std::cout << "isbn: " << current_item.get_isbn() << " sold "
+                          << current_item.get_units_sold() << " copies." << std::endl;
+                current_item = item;
+            }
+        }
+        std::cout << "isbn: " << current_item.get_isbn() << " sold "
+                  << current_item.get_units_sold() << " copies." << std::endl;
+    }
+}
+
 #endif // !CHAPTER_01_H
