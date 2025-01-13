@@ -1,7 +1,7 @@
-#include <iostream>
+#include "chapter_01.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    exercise_1_16();
     return 0;
 }
