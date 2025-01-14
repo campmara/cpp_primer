@@ -210,4 +210,34 @@ void exercise_1_23()
     }
 }
 
+int bookstore_program()
+{
+    SalesItem total;
+
+    if (std::cin >> total)
+    {
+        SalesItem trans;
+
+        while (std::cin >> trans)
+        {
+            if (total.get_isbn() == trans.get_isbn())
+            {
+                total += trans;
+            }
+            else
+            {
+                std::cout << total << std::endl;
+                total = trans;
+            }
+        }
+        std::cout << total << std::endl;
+    }
+    else
+    {
+        std::cerr << "No data?!" << std::endl;
+        return -1;
+    }
+    return 0;
+}
+
 #endif // !CHAPTER_01_H

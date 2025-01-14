@@ -2,6 +2,6 @@
 
 int main()
 {
-    exercise_1_23();
-    return 0;
+    return bookstore_program();
+    //return 0;
 }

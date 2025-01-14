@@ -35,6 +35,6 @@ protected:
     // protected class members useable by the class and its inheritors
 private:
     // private class members useable only by this class
-}
+};
 ```
 
