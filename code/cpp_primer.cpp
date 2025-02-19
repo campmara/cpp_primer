@@ -1,7 +1,7 @@
-#include "include/chapter_01.h"
+//#include "ch01.cpp"
+#include "ch02.cpp"
 
 int main()
 {
-    return bookstore_program();
-    //return 0;
+    return 0;
 }

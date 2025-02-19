@@ -1,9 +1,6 @@
-#ifndef CHAPTER_01_H
-#define CHAPTER_01_H
-
 #include <iostream>
 
-#include "sales_item.h"
+#include "include/sales_item.h"
 
 void exercise_1_4()
 {
@@ -239,5 +236,3 @@ int bookstore_program()
     }
     return 0;
 }
-
-#endif // !CHAPTER_01_H
